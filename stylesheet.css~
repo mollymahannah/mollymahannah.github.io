@@ -1,0 +1,31 @@
+body {
+      text-align: center;
+      background-image: url("spain.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: verdana;
+    }
+    p {
+      font-size: 15px;
+    }
+    input {
+      border: 0;
+      padding: 10px;
+      font-size: 18px;
+      
+    }
+    input[type="submit"] {
+      background: black;
+      color: white;
+    }
+
+a:link {color:#FBEFEF;}  
+a:visited {color:#F6CECE;}
+a:hover {color:#3B0B0B;}  
+a:active {color:#A4A4A4;} 
+
+img {
+   padding:1px;
+   border:1px solid #021a40;
+}

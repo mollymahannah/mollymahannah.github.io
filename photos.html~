@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head><link rel="stylesheet" type="text/css" href="stylesheet.css">
+<title>My Photos </title>
+</head>
+<body>
+<img src="one.jpg" alt="One" width="500px" height="300px"><br>
+<img src="two.jpg" alt="Two" width="500px" height="300px"><br>
+<img src="three.jpg" alt="Three" width="500px" height="300px">
+<nav>
+  <a href="resume.html">Resume</a> |
+  <a href="http://www.collegecandy.com/authors/thesinkablemollybrown">College Candy</a> |
+  <a href="photos.html">My Pictures</a> 
+</nav>
+</body>
