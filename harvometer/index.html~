@@ -1,0 +1,69 @@
+<!D0CTYPE HTML>
+<html>
+<head>
+<title>The Official Harv-o-Meter</title>
+<link rel="stylesheet" type="text/css" href="base.css">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/full-width-pics.css" rel="stylesheet">
+<h1>The Official Harv-o-Meter</h1>
+</head>
+
+<div class="container">
+ <h2>Harvey Perlman's lofty goals for UNL Enrollment</h2>
+ <p>Harvey Perlman, Chancellor at the University of Nebraska-Lincoln, has set a goal to have 30,000 students enrolled at UNL by 2020. This goal has been
+ mocked by several UNL students, including UNL's satirical publication The DailyER Nebraskan, because these goals seem near impossible for a school
+ deemed the smallest in the big ten. After analyzing enrollment data provided by the UNL Office of Planning and Policy, it's clear to see that UNL's enrollment
+has never been higher than 25,000 students. </p>
+ <img src="chart1.png" style="padding-bottom:20px;" width="100%"/>
+</div>
+
+<div class="container">
+<p>In an effort to make UNL more appealing, Perlman also plans on getting more students to graduate in four years as opposed to five or six years.</p>
+
+</div>
+<div class="row">
+  <div class="col-md-6">
+<!--
+<pre>
+{{ "{% for row in data %}" }}
+{{ "<p>" }}
+{{ "  <strong>{{ row.column1 }}</strong>:" }}
+{{ "  {{ row.column2 }}" }}
+{{ "</p>" }}
+{{ "{% endfor %}" }}
+</pre>
+-->
+    <p>Output:</p>
+
+    {% for year in enrollment %}
+    <p>
+      <strong>{{ year.Year|int }}:</strong>
+      {{ year.Students|int }}
+    </p>
+    {% endfor %}
+  </div>
+  <div class="col-md-6">
+    <h3>Access data by key</h3>
+    <p><em>Requires a column named <code>key</code>.</em></p>
+
+<pre>
+{{ "<p>" }}
+{{ "  <strong>key1, column 1</strong>:" }} 
+{{ "  {{ keyed_data.key1.column1 }}" }}
+{{ "</p>" }}
+{{ "<p>" }}
+{{ "  <strong>key2, column 2</strong>:" }} 
+{{ "  {{ keyed_data.key2.column2 }}" }}
+{{ "</p>" }}
+</pre>
+
+    <p>Output:</p>
+    <p>
+      <strong>key1, column 1</strong>:
+      {{ keyed_data.key1.column1 }}
+    </p>
+    <p>
+      <strong>key2, column 2</strong>:
+      {{ keyed_data.key2.column2 }}</p>
+  </div>
+</html>
