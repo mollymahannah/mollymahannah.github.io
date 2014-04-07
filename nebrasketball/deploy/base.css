@@ -1,0 +1,23 @@
+body { padding-top: 50px;
+width: 70% }
+
+.social-menu>li>a {
+  font-size: 24px;
+  padding: 11px 0;
+}
+
+
+.title
+{text-align:center;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+#left
+	{float: left;
+	width: 50%}
